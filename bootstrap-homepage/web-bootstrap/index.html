@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Diome Nike Potot - Bootstrap Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./libraries/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./libraries/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+  </head>
+  <body>
+    <header class="header py-3">
+      <div class="container">
+        <nav
+          class="navbar flex-wrap justify-content-between navbar-expand-lg navbar-light bg-light px-3"
+        >
+          <div class="site-logo">
+            <a
+              class="navbar-brand"
+              href="https://dio-ddev.vercel.app/"
+              target="_blank"
+              >Dio.dev</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="navbar">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="popupLogin()">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="slider">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/slideshow/slide-1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/slideshow/slide-2.jpg"
+                class="d-block w-100"
+                loading="lazy"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/slideshow/slide-3.jpg"
+                class="d-block w-100"
+                loading="lazy"
+                alt="..."
+              />
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mt-5">
+        <div class="container">
+          <h2 class="mb-1">About</h2>
+          <div class="row py-5">
+            <div class="col-12 col-md-2 d-flex justify-content-center">
+              <img src="./assets/avatar-1.svg" />
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="bg-light p-3">
+                <p>
+                  Hi! I am Diome Nike Potot a web developer from the
+                  Philippines. Specializing in creating visually appealing
+                  websites, on-page search engine optimization, web standard
+                  based development, and other amazing stuff. When I develop
+                  websites, I always enforce web standards including on-page
+                  seo, google & bing website submission, sitemap submission,
+                  schema structured data markup, webpage optimizations to load
+                  your website in an instant using Next.js, site building
+                  standards, to mention a few. I always believe that whatever
+                  comes is an opportunity to grow. Believe in yourself and don't
+                  miss the chance of growing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-light p-3">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between">
+          <p class="text-center">© 2021 Dio.dev. All Rights Reserved.</p>
+          <div class="d-flex flex-wrap">
+            <div class="px-1">
+              <a
+                class="link-social text-secondary"
+                href="https://www.facebook.com/diomenikepotot/"
+                target="_blank"
+              >
+                <i class="bi bi-facebook" width="50" height="50"></i>
+              </a>
+            </div>
+            <div class="px-1">
+              <a
+                class="link-social text-secondary"
+                href="https://github.com/localnetwork"
+                target="_blank"
+              >
+                <i class="bi bi-github" width="50" height="50"></i>
+              </a>
+            </div>
+            <div class="px-1">
+              <a
+                class="link-social text-secondary"
+                href="https://www.linkedin.com/in/diome"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin" width="50" height="50"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./libraries/sweet-alert/sweetalert.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

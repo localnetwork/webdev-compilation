@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./libraries/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./libraries/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="body min-vh-100 p-5 d-flex align-items-center">
+    <div class="container">
+      <div class="row rounded overflow-hidden shadow-lg">
+        <div class="col-md-6 content-left"></div>
+        <div class="col-md-6 bg-white p-5">
+          <h1 class="page-title mb-4 fw-normal">Register</h1>
+          <form id="register" action="#">
+            <div class="form-group mb-3">
+              <!-- AS MUCH AS I WANT TO FOLLOW YOUR INSTRUCTION, BUT I FOLLOWED THE PROVIDED DESIGN. SO I'LL JUST HIDE THE ELEMENT/LABEL SO IT WILL BE PRESENT WHEN CHECKED. -->
+              <label class="mb-2 d-none" for="firstname">Firstname</label>
+              <input
+                required="required"
+                type="text"
+                class="form-control rounded-pill py-2 px-3"
+                id="firstname"
+                placeholder="Firstname"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <!-- AS MUCH AS I WANT TO FOLLOW YOUR INSTRUCTION, BUT I FOLLOWED THE PROVIDED DESIGN. SO I'LL JUST HIDE THE ELEMENT/LABEL SO IT WILL BE PRESENT WHEN CHECKED. -->
+              <label class="mb-2 d-none" for="lastname">Lastname</label>
+              <input
+                required="required"
+                type="text"
+                class="form-control rounded-pill py-2 px-3"
+                id="lastname"
+                placeholder="Lastname"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <!-- AS MUCH AS I WANT TO FOLLOW YOUR INSTRUCTION, BUT I FOLLOWED THE PROVIDED DESIGN. SO I'LL JUST HIDE THE ELEMENT/LABEL SO IT WILL BE PRESENT WHEN CHECKED. -->
+              <label class="mb-2 d-none" for="email">Email</label>
+              <input
+                required="required"
+                type="email"
+                class="form-control rounded-pill py-2 px-3"
+                id="email"
+                placeholder="Email Address"
+              />
+            </div>
+            <hr />
+            <div class="form-group mb-3">
+              <!-- AS MUCH AS I WANT TO FOLLOW YOUR INSTRUCTION, BUT I FOLLOWED THE PROVIDED DESIGN. SO I'LL JUST HIDE THE ELEMENT/LABEL SO IT WILL BE PRESENT WHEN CHECKED. -->
+              <label class="mb-2 d-none" for="address">Address</label>
+              <input
+                required="required"
+                type="text"
+                class="form-control rounded-pill py-2 px-3"
+                id="address"
+                placeholder="Address"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <!-- AS MUCH AS I WANT TO FOLLOW YOUR INSTRUCTION, BUT I FOLLOWED THE PROVIDED DESIGN. SO I'LL JUST HIDE THE ELEMENT/LABEL SO IT WILL BE PRESENT WHEN CHECKED. -->
+              <label class="mb-2 d-none" for="phone">Phone Number</label>
+              <input
+                required="required"
+                type="tel"
+                class="form-control rounded-pill py-2 px-3"
+                id="phone"
+                placeholder="Phone Number"
+              />
+            </div>
+            <hr />
+            <div class="form-group mb-3">
+              <!-- AS MUCH AS I WANT TO FOLLOW YOUR INSTRUCTION, BUT I FOLLOWED THE PROVIDED DESIGN. SO I'LL JUST HIDE THE ELEMENT/LABEL SO IT WILL BE PRESENT WHEN CHECKED. -->
+              <label class="mb-2 d-none" for="password">Password</label>
+              <input
+                required="required"
+                type="password"
+                class="form-control rounded-pill py-2 px-3"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <!-- AS MUCH AS I WANT TO FOLLOW YOUR INSTRUCTION, BUT I FOLLOWED THE PROVIDED DESIGN. SO I'LL JUST HIDE THE ELEMENT/LABEL SO IT WILL BE PRESENT WHEN CHECKED. -->
+              <label class="mb-2 d-none" for="confirm_password"
+                >Confirm Password</label
+              >
+              <input
+                required="required"
+                type="password"
+                class="form-control rounded-pill py-2 px-3"
+                id="confirm_password"
+                placeholder="Confirm Password"
+              />
+            </div>
+
+            <div class="form-group mb-4 form-actions">
+              <!-- SUPPOSED TO BE btn-primary to match the color of the mock-up -->
+              <input
+                class="btn text-uppercase btn-success w-100 rounded-pill py-3 fw-bold"
+                type="submit"
+                value="Register"
+              />
+
+              <div class="text-center mt-2">
+                <a
+                  class="text-center text-primary text-decoration-none"
+                  href="#"
+                  >Sign In</a
+                >
+              </div>
+            </div>
+            <hr class="mb-4" />
+
+            <div class="form-group mb-3">
+              <button
+                class="text-uppercase social social-primary w-100 rounded-pill py-3"
+              >
+                <i class="bi bi-google"></i>
+                Sign Up With Google
+              </button>
+            </div>
+            <div class="form-group mb-3">
+              <button
+                class="text-uppercase social social-secondary w-100 rounded-pill py-3"
+              >
+                <i class="bi bi-facebook"></i>
+                Sign Up With Facebook
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

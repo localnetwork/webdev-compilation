@@ -1,0 +1,68 @@
+/* CSS VARIABLES */
+:root {
+  --primary: #6f6b89;
+  --socialPrimary: #ff4131;
+  --socialSecondary: #23599b;
+}
+body {
+  background-color: #009afc;
+  color: var(--primary);
+}
+
+.page-title {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* NEED TO ADJUST THE CONTAINER WIDTH */
+.container {
+  max-width: 1000px;
+}
+
+.content-left {
+  /* JUST TOOK A SCREENSHOT. SORRY FOR THE QUALITY AND CONVERTED IT TO WEBP TO LOAD IT FASTER. */
+  background-image: url("./assets/HeroPicture.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* NEEDED TO USE IMPORTANT AS BOOTSTRAP SPECIFICITY IS HIGHER. */
+::placeholder {
+  color: var(--primary) !important;
+}
+
+::-webkit-input-placeholder {
+  color: var(--primary) !important;
+}
+::-moz-placeholder {
+  color: var(--primary) !important;
+}
+:-ms-input-placeholder {
+  color: var(--primary) !important;
+}
+:-moz-placeholder {
+  color: var(--primary) !important;
+}
+
+/* SOCIAL MEDIA SIGNUP BUTTONS */
+.social {
+  color: #fff;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social-primary {
+  background-color: var(--socialPrimary);
+}
+.social-secondary {
+  background-color: var(--socialSecondary);
+}
+
+@media (max-width: 767px) {
+  .body {
+    padding: 30px !important;
+  }
+}

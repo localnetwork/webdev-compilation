@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <form class="bmi-calculator">
+      <input class="weight" type="text" placeholder="Enter weight in kg." />
+      <input class="height" type="text" placeholder="Enter height in meters." />
+
+      <div style="margin-top: 30px">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <script>
+      const formSubmit = () => {
+        const bmiForm = document.querySelector(".bmi-calculator");
+
+        bmiForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          const getWeight = parseFloat(document.querySelector(".weight").value);
+          const getHeight = parseFloat(document.querySelector(".height").value);
+
+          const calcHeight = Math.pow(getHeight, 2);
+
+          const calcValue = getWeight / calcHeight;
+
+          if (
+            isNaN(getWeight) ||
+            isNaN(getHeight) ||
+            getWeight <= 0 ||
+            getHeight <= 0
+          ) {
+            alert("Please enter valid weight and height.");
+          } else {
+            if (calcValue <= 18.5) {
+              alert("Underweight");
+            } else if (calcValue >= 18.6 && calcValue <= 24.9) {
+              alert("Normal weight");
+            } else if (calcValue >= 25 && calcValue <= 29.9) {
+              alert("Overweight");
+            } else {
+              alert("Obese");
+            }
+
+            console.log("calcValue:", calcValue.toFixed(2));
+          }
+        });
+      };
+
+      formSubmit();
+    </script>
+  </body>
+</html>

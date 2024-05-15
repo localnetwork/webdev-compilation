@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page title</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .clock {
+        background: #000;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clock"></div>
+
+    <script>
+      let intervalId;
+
+      const alarmTime = new Date();
+      alarmTime.setSeconds(alarmTime.getSeconds() + 5);
+
+      const clock = () => {
+        const date = new Date();
+        const hrs = date.getHours().toString().padStart(2, "0");
+        const min = date.getMinutes().toString().padStart(2, "0");
+        const sec = date.getSeconds().toString().padStart(2, "0");
+
+        document.querySelector(".clock").innerText = `${hrs}:${min}:${sec}`;
+
+        if (date > alarmTime) {
+          alert("Alarm!");
+          clearInterval(intervalId);
+        }
+      };
+
+      intervalId = setInterval(clock, 1000);
+
+      clock();
+    </script>
+  </body>
+</html>
