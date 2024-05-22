@@ -3,14 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form class="bmi-calculator">
-      <input class="weight" type="text" placeholder="Enter weight in kg." />
-      <input class="height" type="text" placeholder="Enter height in meters." />
+    <form class="bmi-calculator box-shadow">
+      <h1 class="page-title">BMI Calculator</h1>
+      <div class="form-item">
+        <input
+          class="weight form-control"
+          type="text"
+          placeholder="Enter weight in kg."
+        />
+      </div>
+      <div class="form-item">
+        <input
+          class="height form-control"
+          type="text"
+          placeholder="Enter height in meters."
+        />
+      </div>
 
       <div style="margin-top: 30px">
-        <button type="submit">Submit</button>
+        <button class="submit" type="submit">Calculate</button>
       </div>
     </form>
 
